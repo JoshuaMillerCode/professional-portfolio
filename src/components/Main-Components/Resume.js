@@ -21,20 +21,40 @@ export default function Resume() {
 
           <div className="resume-timeline">
             <div className="item scroll-animation" data-aos="fade-right">
-              <span className="date">2020 - Present</span>
-              <h2>Framer Desinger & Developer</h2>
-              <p>Brunodee Agency</p>
-              <h2>Front-End WordPress Developer</h2>
-              <p>Envato Market</p>
+              <span className="date"> 2023 - Present</span>
+              <h2>Lead Software Engineering Instructor</h2>
+              <p>Per Scholas</p>
+              <span
+                style={{ fontSize: '.85rem', marginTop: '-1%' }}
+                className="date"
+              >
+                Current
+              </span>
+            </div>
+            <div className="item scroll-animation" data-aos="fade-left">
+              <span className="date"> 2022 - 2023</span>
+              <h2> Junior MicroServices Engineer</h2>
+              <p>Seventh Ave Inc.</p>
+              <h2>Junior Software Engineering Instructor</h2>
+              <p>Per Scholas</p>
+              <h2>Instructor Assistant</h2>
+
+              <p>Per Scholas</p>
             </div>
             <div className="item scroll-animation" data-aos="fade-left">
               <span className="date">2021 - 2022</span>
-              <h2> Junior MicroServices Engineer</h2>
-              <p>Designflow Studio</p>
-              <h2>Web Designer</h2>
-              <p>Freelance</p>
-              <h2>Leader Team of Marketing</h2>
+
+              <h2>Paid Software Engineer Intern</h2>
               <p>Seventh Ave Inc.</p>
+              <p></p>
+              <h2>Teaching Assistant</h2>
+              <p>General Assembly Inc.</p>
+              <span
+                style={{ fontSize: '.85rem', marginTop: '-1%' }}
+                className="date"
+              >
+                Current
+              </span>
             </div>
             <div className="item scroll-animation" data-aos="fade-right">
               <span className="date">2020 - 2021</span>

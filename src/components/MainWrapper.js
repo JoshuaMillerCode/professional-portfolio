@@ -21,9 +21,9 @@ export default function Main() {
           <About />
           <Resume />
           {/* <Service/> */}
-          <Skills />
+          {/* <Skills /> */}
           <Portfolio />
-          <Testimonials />
+          {/* <Testimonials /> */}
           {/* <Clientlogos/> */}
           {/* <Pricing/> */}
           <Contact />

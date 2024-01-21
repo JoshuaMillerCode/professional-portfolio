@@ -33,8 +33,20 @@ export default function Lsb() {
           </a>
         </li>
       </ul>
-      <a href="#" className="theme-btn">
+      <a
+        href="mailto:joshmillercode@gmail.com"
+        className="theme-btn"
+        style={{ marginBottom: '5px' }}
+      >
         <i className="las la-envelope"></i> Hire Me!
+      </a>
+      <br />
+      <a
+        href="./assets/Joshua-Miller-Full Stack Software Engineer.pdf"
+        className="theme-btn"
+        style={{ marginBottom: '5px' }}
+      >
+        <i className="las la-paper-plane"></i> Resume
       </a>
     </div>
   );

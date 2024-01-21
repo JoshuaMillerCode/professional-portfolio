@@ -41,11 +41,11 @@ export default function Rsidemenu() {
                                 <i className="las la-stream"></i> <span>Services</span>
                             </a>
                         </li> */}
-              <li>
+              {/* <li>
                 <a className="scroll-to" href="#skills" onClick={removeActive}>
                   <i className="las la-shapes"></i> <span>Skills</span>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   className="scroll-to"
@@ -56,7 +56,7 @@ export default function Rsidemenu() {
                   <span>Portfolios</span>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="scroll-to"
                   href="#testimonial"
@@ -64,7 +64,7 @@ export default function Rsidemenu() {
                 >
                   <i className="lar la-comment"></i> <span>Testimonial</span>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a className="scroll-to" href="#contact" onClick={removeActive}>
                   <i className="las la-envelope"></i> <span>Contact</span>

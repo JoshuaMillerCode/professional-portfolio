@@ -25,8 +25,8 @@ export default function Herosec() {
             </h1>
           </div>
           <p className="scroll-animation" data-aos="fade-up">
-            I design and code beautifully simple things and i love what i do.
-            Just simple like that!
+            I code and teach fullstack websites. I love what I do. Simple as
+            that!
           </p>
           <a
             href="#portfolio"

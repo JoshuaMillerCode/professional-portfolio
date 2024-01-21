@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Lightbox from 'lightbox2';
-import 'lightbox2/dist/css/lightbox.min.css';
+// import Lightbox from 'lightbox2';
+// import 'lightbox2/dist/css/lightbox.min.css';
 // import 'lightbox2/dist/js/lightbox.js';
 
 export default function Portfolio() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    Lightbox.option({
-      resizeDuration: 200,
-      fadeDuration: 600,
-      imageFadeDuration: 600,
-      wrapAround: true,
-    });
+    // Lightbox.option({
+    //   resizeDuration: 200,
+    //   fadeDuration: 600,
+    //   imageFadeDuration: 600,
+    //   wrapAround: true,
+    // });
   }, []);
   return (
     <section
@@ -35,37 +35,65 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
-                  <a
-                    href="../assets/images/portfolio1.jpg"
-                    data-lightbox="example-1"
-                  >
+                  <a href="https://api-go.app/" data-lightbox="example-1">
                     <img
-                      src="../assets/images/portfolio1.jpg"
+                      src="../assets/images/API-GO-ezgif.com-speed.gif"
                       alt="Portfolio"
                     />
                   </a>
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="https://www.figma.com">Figma</a>
+                      <a href="#">NodeJS</a>
                     </li>
                     <li>
-                      <a href="https://www.Framer.com">Framer</a>
+                      <a href="#">NPM</a>
                     </li>
                     <li>
-                      <a href="https://www.wordpress.com">WordPress</a>
+                      <a href="#">Axios</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.Bureau - Architecture Studio Website.com">
-                    Bureau - Architecture Studio Website
-                  </a>
+                  <a href="https://api-go.app/">API-GO</a>
                 </h2>
               </div>
             </div>
 
-            <div className="col-md-6 scroll-animation" data-aos="fade-right">
+            <div className="col-md-12 scroll-animation" data-aos="fade-right">
+              <div className="portfolio-item portfolio-half">
+                <div className="portfolio-item-inner">
+                  {/* <a
+                    href="../assets/images/portfolio2.jpg"
+                    data-lightbox="example-1"
+                  > */}
+                  <img src="../assets/images/User-tool.jpeg" alt="Portfolio" />
+                  {/* </a> */}
+
+                  {/* <img src="../assets/images/User-tool.jpeg" alt="Portfolio" /> */}
+
+                  <ul className="portfolio-categories">
+                    <li>
+                      <a href="#">React</a>
+                    </li>
+                    <li>
+                      <a href="#">Redux</a>
+                    </li>
+                    <li>
+                      <a href="#">Bootstrap</a>
+                    </li>
+                    <li>
+                      <a href="#">MongoDB & Mongoose</a>
+                    </li>
+                  </ul>
+                </div>
+                <h2>
+                  <a href="">Seventh Ave. User Tool</a>
+                </h2>
+              </div>
+            </div>
+
+            <div className="col-md-12 scroll-animation" data-aos="fade-right">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a
@@ -78,24 +106,27 @@ export default function Portfolio() {
                     />
                   </a>
 
-                  <img src="../assets/images/portfolio2.jpg" alt="Portfolio" />
+                  {/* <img src="../assets/images/portfolio2.jpg" alt="Portfolio" /> */}
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="https://www.wordpress.com">WordPress</a>
+                      <a href="#">React Native</a>
                     </li>
                     <li>
-                      <a href="https://www.larevel.com">Larevel/PHP</a>
+                      <a href="#">Firebase</a>
+                    </li>
+                    <li>
+                      <a href="#">Expo</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.moonex.com">Moonex WordPress Theme</a>
+                  <a href="">FOMO App</a>
                 </h2>
               </div>
             </div>
 
-            <div className="col-md-6 scroll-animation" data-aos="fade-left">
+            {/* <div className="col-md-6 scroll-animation" data-aos="fade-left">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a
@@ -110,46 +141,44 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="https://www.figma.com">Figma</a>
+                      <a href="#">NodeJS</a>
                     </li>
                     <li>
-                      <a href="https://www.webflow.com">Webflow</a>
+                      <a href="#">ExpressJS</a>
+                    </li>
+                    <li>
+                      <a href="#">RxJS</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.taskly-dashboard.com">
-                    Taskly Dashboard
-                  </a>
+                  <a href="https://www.taskly-dashboard.com">Event Vans</a>
                 </h2>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a
-                    href="../assets/images/portfolio4.jpg"
+                    href="https://www.npmjs.com/package/node-backend-starter"
                     data-lightbox="example-1"
                   >
-                    <img
-                      src="../assets/images/portfolio4.jpg"
-                      alt="portfolio"
-                    />
+                    <img src="./assets/images/nbs-npm.png" alt="portfolio" />
                   </a>
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="https://www.figma.com">Figma</a>
+                      <a href="#">ExpressJS</a>
                     </li>
                     <li>
-                      <a href="https://www.reactjs.com">React</a>
+                      <a href="#">NodeJS</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.hinterland.com">
-                    Hinterland - Real Estate Site Redesign
+                  <a href="https://www.npmjs.com/package/node-backend-starter">
+                    node-backend-starter - NPM Package
                   </a>
                 </h2>
               </div>
@@ -158,26 +187,24 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
-                  <a
+                  {/* <a
                     href="../assets/images/portfolio5.jpg"
                     data-lightbox="example-1"
-                  >
-                    <img
-                      src="../assets/images/portfolio5.jpg"
-                      alt="portfolio"
-                    />
-                  </a>
+                  > */}
+                  <img src="../assets/images/QuizBee.png" alt="portfolio" />
+                  {/* </a> */}
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="https://www.framer.com">Framer</a>
+                      <a href="#">React</a>
+                    </li>
+                    <li>
+                      <a href="#">MongoDB & Mongoose</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.lewis.com">
-                    Lewis Portfolio Framer Template
-                  </a>
+                  <a href="https://www.lewis.com">QuizBee Hackathon Project</a>
                 </h2>
               </div>
             </div>
