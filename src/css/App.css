@@ -1,4 +1,8 @@
-
+@media only screen and (max-width: 600px) {
+  .body-overlay {
+    opacity: 0 !important;
+  }
+}
 /* 
     -- Table of Content --
 
@@ -832,6 +836,8 @@ main.drake-main {
 .home6-page .icon-menu {
   background: #000000;
 }
+
+
 /* 09 - Home 5 */
 body .body-overlay {
   position: fixed;
@@ -843,9 +849,7 @@ body .body-overlay {
   z-index: -1;
 }
 
-body .body-overlay::-webkit-media-controls {
-  display: none;
-}
+
 
 .home2-page .body-overlay,
 .home3-page .body-overlay {
