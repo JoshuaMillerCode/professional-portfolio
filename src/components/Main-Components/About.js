@@ -20,15 +20,20 @@ export default function About() {
             </h1>
           </div>
           <p className="scroll-animation about-about" data-aos="fade-up">
-            With nearly 3 years of experience as a software engineer, I am
-            committed to creating exceptional projects and driving meaningful
-            change. Renowned for my meticulous coding approach, I specialize in
-            JavaScript, Node, MongoDB, React, and more. Currently teaching at
-            Perscholas, I lead cohorts in MERN stack development, ensuring
-            successful graduation. Previously, at Seventh Ave., I enhanced user
-            experience for 7000+ users and contributed innovative solutions. I
-            actively contribute to General Assembly by establishing a nurturing
-            remote learning environment. <br />
+            With almost 3 years of experience as a software engineer, I am
+            dedicated to crafting outstanding projects and instigating
+            meaningful transformations. My reputation is built on a meticulous
+            coding approach, with expertise in{' '}
+            <span>JavaScript, Node, MongoDB, React,</span> and more. In addition
+            to my current role as an instructor at Perscholas, where I guide
+            cohorts in <span>MERN stack</span> development for successful
+            graduations, I have also ventured into Freelance work. I have{' '}
+            <span>developed</span> and <span>deployed</span> an app, showcasing
+            my versatility and proficiency in the field. Past experiences at
+            Seventh Ave. involved elevating the user experience for{' '}
+            <span>7000+</span> users and devising innovative solutions.
+            Furthermore, I actively contribute to General Assembly by creating a
+            supportive remote learning environment. <br />
             <span>
               I excel in problem-solving, collaboration, and delivering
               top-notch full-stack development and API solutions.

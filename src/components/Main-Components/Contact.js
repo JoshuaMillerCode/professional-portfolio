@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -6,6 +6,50 @@ export default function Contact() {
   useEffect(() => {
     AOS.init({ duration: 1300 });
   }, []);
+
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    subject: '',
+    message: '',
+  });
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        setTimeout(() => {
+          setSuccess(false);
+        }, 4000);
+      }
+
+      setFormData({
+        fullName: '',
+        email: '',
+        phoneNumber: '',
+        subject: '',
+        message: '',
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <section className="contact-area page-section scroll-content" id="contact">
       <div className="custom-container">
@@ -24,16 +68,20 @@ export default function Contact() {
           <form
             className="contact-form scroll-animation"
             data-aos="fade-up"
-            method="POST"
-            action="mailer.php"
+            // method="POST"
+            // action="localhost:3001/email"
+            onSubmit={handleSubmit}
           >
-            <div
-              className="alert alert-success messenger-box-contact__msg"
-              style={{ display: 'none' }}
-              role="alert"
-            >
-              Your message was sent successfully.
-            </div>
+            {success ? (
+              <div
+                className="alert alert-success messenger-box-contact__msg"
+                role="alert"
+              >
+                Your message was sent successfully.
+              </div>
+            ) : (
+              ''
+            )}
             <div className="row">
               <div className="col-md-6">
                 <div className="input-group">
@@ -42,7 +90,9 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    name="full-name"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    name="fullName"
                     id="full-name"
                     placeholder="Your Full Name"
                   />
@@ -55,6 +105,8 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     name="email"
                     id="email"
                     placeholder="Your email adress"
@@ -68,7 +120,9 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    name="phone-number"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    name="phoneNumber"
                     id="phone-number"
                     placeholder="Your number phone"
                   />
@@ -80,6 +134,8 @@ export default function Contact() {
                     subject <sup>*</sup>
                   </label>
                   <input
+                    value={formData.subject}
+                    onChange={handleChange}
                     type="text"
                     name="subject"
                     id="subject"
@@ -103,13 +159,15 @@ export default function Contact() {
                 <div className="input-group">
                   <label for="message">message</label>
                   <textarea
+                    value={formData.message}
+                    onChange={handleChange}
                     name="message"
                     id="message"
                     placeholder="Wrire your message here ..."
                   ></textarea>
                 </div>
               </div>
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="input-group upload-attachment">
                   <div>
                     <label for="upload-attachment">
@@ -119,7 +177,7 @@ export default function Contact() {
                     </label>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-md-12">
                 <div className="input-group submit-btn-wrap">
                   <button

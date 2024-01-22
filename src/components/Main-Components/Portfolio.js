@@ -44,13 +44,13 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">NodeJS</a>
+                      <a disabled>NodeJS</a>
                     </li>
                     <li>
-                      <a href="#">NPM</a>
+                      <a disabled>NPM</a>
                     </li>
                     <li>
-                      <a href="#">Axios</a>
+                      <a disabled>Axios</a>
                     </li>
                   </ul>
                 </div>
@@ -74,21 +74,21 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">React</a>
+                      <a disabled>React</a>
                     </li>
                     <li>
-                      <a href="#">Redux</a>
+                      <a disabled>Redux</a>
                     </li>
                     <li>
-                      <a href="#">Bootstrap</a>
+                      <a disabled>Bootstrap</a>
                     </li>
                     <li>
-                      <a href="#">MongoDB & Mongoose</a>
+                      <a disabled>MongoDB & Mongoose</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="">Seventh Ave. User Tool</a>
+                  <a disabled>Seventh Ave. User Tool</a>
                 </h2>
               </div>
             </div>
@@ -96,32 +96,26 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-right">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
-                  <a
-                    href="../assets/images/portfolio2.jpg"
-                    data-lightbox="example-1"
-                  >
-                    <img
-                      src="../assets/images/portfolio2.jpg"
-                      alt="Portfolio"
-                    />
+                  <a href="https://thefomoapp.com/" data-lightbox="example-1">
+                    <img src="../assets/images/FOMO.png" alt="Portfolio" />
                   </a>
 
                   {/* <img src="../assets/images/portfolio2.jpg" alt="Portfolio" /> */}
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">React Native</a>
+                      <a disabled>React Native</a>
                     </li>
                     <li>
-                      <a href="#">Firebase</a>
+                      <a disabled>Firebase</a>
                     </li>
                     <li>
-                      <a href="#">Expo</a>
+                      <a disabled>Expo</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="">FOMO App</a>
+                  <a href="https://thefomoapp.com/">FOMO App</a>
                 </h2>
               </div>
             </div>
@@ -141,13 +135,13 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">NodeJS</a>
+                      <a disabled>NodeJS</a>
                     </li>
                     <li>
-                      <a href="#">ExpressJS</a>
+                      <a disabled>ExpressJS</a>
                     </li>
                     <li>
-                      <a href="#">RxJS</a>
+                      <a disabled>RxJS</a>
                     </li>
                   </ul>
                 </div>
@@ -169,10 +163,10 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">ExpressJS</a>
+                      <a disabled>ExpressJS</a>
                     </li>
                     <li>
-                      <a href="#">NodeJS</a>
+                      <a disabled>NodeJS</a>
                     </li>
                   </ul>
                 </div>
@@ -196,15 +190,15 @@ export default function Portfolio() {
 
                   <ul className="portfolio-categories">
                     <li>
-                      <a href="#">React</a>
+                      <a disabled>React</a>
                     </li>
                     <li>
-                      <a href="#">MongoDB & Mongoose</a>
+                      <a disabled>MongoDB & Mongoose</a>
                     </li>
                   </ul>
                 </div>
                 <h2>
-                  <a href="https://www.lewis.com">QuizBee Hackathon Project</a>
+                  <a disabled>QuizBee Hackathon Project</a>
                 </h2>
               </div>
             </div>

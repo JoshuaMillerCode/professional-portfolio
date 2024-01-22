@@ -76,18 +76,18 @@ export default function Rsidemenu() {
           <div className="sidebar-social">
             <p>Social</p>
             <ul className="social-links d-flex align-items-center">
-              <li>
+              {/* <li>
                 <a href="https://twitter.com">
                   <i className="lab la-twitter"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="https://github.com">
+                <a href="https://github.com/JoshuaMillerCode">
                   <i className="lab la-github"></i>
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com">
+                <a href="https://www.linkedin.com/in/joshuamillerdev/">
                   <i className="lab la-linkedin"></i>
                 </a>
               </li>

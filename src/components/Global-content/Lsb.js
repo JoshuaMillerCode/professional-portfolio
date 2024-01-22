@@ -8,7 +8,7 @@ export default function Lsb() {
         <span className="designation">Full Stack Engineer & Instructor</span>
       </div>
       <img className="me" src="./assets/images/profile_pic_new.png" alt="Me" />
-      <h2 className="email">millerjoshua737@gmail.com</h2>
+      <h2 className="email">joshmillercode@gmail.com</h2>
       <h2 className="address">Based in Houston, TX</h2>
       {/* <p className="copyright">&copy; 2022 Drake. All Rights Reserved</p> */}
       <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
