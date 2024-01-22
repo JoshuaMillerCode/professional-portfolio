@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Video extends Component {
   componentDidUpdate(prevProps) {
@@ -9,11 +9,19 @@ export class Video extends Component {
 
   render() {
     return (
-        <video className="body-overlay" muted autoPlay loop style={{opacity: 0.1}} ref={ref => this.videoRef = ref}>
-            <source src={this.props.video} type="video/mp4"/>
-        </video>
-    )
+      <video
+        className="body-overlay"
+        muted
+        playsinline
+        autoPlay
+        loop
+        style={{ opacity: 0.1 }}
+        ref={(ref) => (this.videoRef = ref)}
+      >
+        <source src={this.props.video} type="video/mp4" />
+      </video>
+    );
   }
 }
 
-export default Video
+export default Video;
