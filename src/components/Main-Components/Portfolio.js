@@ -35,6 +35,42 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
+                  <a
+                    href="https://vanilla-typer.joshuarmiller.dev"
+                    data-lightbox="example-1"
+                  >
+                    <img
+                      src="../assets/images/real-vanilla-typer.gif"
+                      alt="Vanilla Typer"
+                    />
+                  </a>
+
+                  <ul className="portfolio-categories">
+                    <li>
+                      <a disabled>NodeJS</a>
+                    </li>
+                    <li>
+                      <a disabled>HTML & CSS</a>
+                    </li>
+                    <li>
+                      <a disabled>JavaScript</a>
+                    </li>
+                    <li>
+                      <a disabled>ExpressJS</a>
+                    </li>
+                  </ul>
+                </div>
+                <h2>
+                  <a href="https://vanilla-typer.joshuarmiller.dev">
+                    Vanilla Typer
+                  </a>
+                </h2>
+              </div>
+            </div>
+
+            <div className="col-md-12 scroll-animation" data-aos="fade-up">
+              <div className="portfolio-item portfolio-full">
+                <div className="portfolio-item-inner">
                   <a href="https://api-go.app/" data-lightbox="example-1">
                     <img
                       src="../assets/images/API-GO-ezgif.com-speed.gif"
