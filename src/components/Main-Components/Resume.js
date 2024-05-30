@@ -15,7 +15,7 @@ export default function Resume() {
               <i className="las la-briefcase"></i> Resume
             </h4>
             <h1 className="scroll-animation" data-aos="fade-up">
-              Education & <span>Experience</span>
+              <span>Experience</span>
             </h1>
           </div>
 
@@ -41,6 +41,12 @@ export default function Resume() {
 
               <p>Per Scholas</p>
             </div>
+            <div className="item scroll-animation" data-aos="fade-right">
+              <span className="date">Dec 2021 - Jun 2021</span>
+
+              <h2>Full Stack Engineer</h2>
+              <p>Olympus Code</p>
+            </div>
             <div className="item scroll-animation" data-aos="fade-left">
               <span className="date">2021 - 2022</span>
 
@@ -56,6 +62,10 @@ export default function Resume() {
                 Current
               </span>
             </div>
+            <br />
+            <h1 className="scroll-animation" data-aos="fade-up">
+              Education
+            </h1>
             <div className="item scroll-animation" data-aos="fade-right">
               <span className="date">2020 - 2021</span>
               <h2>Software Engineering Immersive Bootcamp</h2>
