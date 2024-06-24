@@ -72,6 +72,12 @@ export default function Resume() {
               {/* <h3>Full Stack Software Engineering Fellow</h3> */}
               <p>General Assembly Inc.</p>
             </div>
+            <div className="item scroll-animation" data-aos="fade-right">
+              <span className="date">2018 - 2020</span>
+              <h2>Some College</h2>
+              {/* <h3>Full Stack Software Engineering Fellow</h3> */}
+              <p>Lone Star College</p>
+            </div>
           </div>
         </div>
       </div>
