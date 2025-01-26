@@ -21,15 +21,18 @@ export default function Resume() {
 
           <div className="resume-timeline">
             <div className="item scroll-animation" data-aos="fade-right">
-              <span className="date"> 2023 - Present</span>
+              <span className="date"> 2023 - 2025</span>
               <h2>Lead Software Engineering Instructor</h2>
               <p>Per Scholas</p>
-              <span
+              <p></p>
+              <h2>Teaching Assistant</h2>
+              <p>General Assembly Inc.</p>
+              {/* <span
                 style={{ fontSize: '.85rem', marginTop: '-1%' }}
                 className="date"
               >
                 Current
-              </span>
+              </span> */}
             </div>
             <div className="item scroll-animation" data-aos="fade-left">
               <span className="date"> 2022 - 2023</span>
@@ -52,15 +55,12 @@ export default function Resume() {
 
               <h2>Paid Software Engineer Intern</h2>
               <p>Seventh Ave Inc.</p>
-              <p></p>
-              <h2>Teaching Assistant</h2>
-              <p>General Assembly Inc.</p>
-              <span
+              {/* <span
                 style={{ fontSize: '.85rem', marginTop: '-1%' }}
                 className="date"
               >
                 Current
-              </span>
+              </span> */}
             </div>
             <br />
             <h1 className="scroll-animation" data-aos="fade-up">
