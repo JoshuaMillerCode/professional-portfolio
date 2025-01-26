@@ -53,7 +53,7 @@ export default function Rsidemenu() {
                   onClick={removeActive}
                 >
                   <i className="las la-grip-vertical"></i>{' '}
-                  <span>Portfolios</span>
+                  <span>Portfolio</span>
                 </a>
               </li>
               {/* <li>
@@ -68,6 +68,29 @@ export default function Rsidemenu() {
               <li>
                 <a className="scroll-to" href="#contact" onClick={removeActive}>
                   <i className="las la-envelope"></i> <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <p>Other Links</p>
+            <ul className="menu scroll-nav-responsive d-flex">
+              <li>
+                <a
+                  className="scroll-to"
+                  href="https://blog.joshuarmiller.dev"
+                  onClick={removeActive}
+                >
+                  <i className="las la-pen-nib"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="scroll-to"
+                  href="https://vanilla-typer.joshuarmiller.dev"
+                  onClick={removeActive}
+                >
+                  <i className="las la-keyboard"></i> <span>Vanilla Typer</span>
                 </a>
               </li>
             </ul>

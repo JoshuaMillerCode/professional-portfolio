@@ -19,7 +19,7 @@ export default function Herosec() {
               <i className="las la-home"></i> Home
             </h4>
             <h1 className="scroll-animation" data-aos="fade-up">
-              <span>Joshua Miller</span>, <br /> Full Stack <br />
+              <span>Joshua Miller</span> <br /> Full Stack <br />
               Software Engineer & <br />
               Instructor
             </h1>

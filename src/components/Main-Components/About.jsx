@@ -20,7 +20,7 @@ export default function About() {
             </h1>
           </div>
           <p className="scroll-animation about-about" data-aos="fade-up">
-            With almost 3+ years of experience as a software engineer, I am
+            {/* With almost 3+ years of experience as a software engineer, I am
             dedicated to crafting outstanding projects and instigating
             meaningful transformations. My reputation is built on a meticulous
             coding approach, with expertise in{' '}
@@ -37,7 +37,34 @@ export default function About() {
             <span>
               I excel in problem-solving, collaboration, and delivering
               top-notch full-stack development and API solutions.
+            </span> */}
+            As a Full Stack Software Engineer with over{' '}
+            <span>5 years of experience</span>, I specialize in building
+            impactful applications and driving innovation through meticulous
+            coding and problem-solving. Proficient in{' '}
+            <span>
+              JavaScript, React, Node.js, MongoDB, and Microservices
+              Architecture
             </span>
+            , I thrive in developing scalable solutions that enhance user
+            experiences. In my role as a Lead Instructor at Per Scholas, I’ve
+            successfully led <span>10+ cohorts (300+ students)</span> in MERN
+            stack development, achieving an <span>85% graduation rate</span> by
+            fostering an engaging and supportive learning environment. My
+            freelance experience includes designing and deploying apps like the
+            FOMO mobile app, which{' '}
+            <span>
+              reduced user search time by 30% and improved engagement by 50%
+            </span>{' '}
+            through user-centric design. At Seventh Ave., I{' '}
+            <span>enhanced the experience for 22,000+ users</span>, developed
+            tools to streamline operations, and{' '}
+            <span>improved system efficiency by 25%</span> through optimized
+            microservices architecture. My contributions also{' '}
+            <span>helped secure $3.5M in funding</span> for a high-impact
+            startup. I am committed to collaboration, innovation, and delivering
+            high-quality full-stack applications and APIs that create meaningful
+            transformations.
           </p>
         </div>
       </div>
