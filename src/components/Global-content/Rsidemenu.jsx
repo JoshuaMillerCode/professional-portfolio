@@ -11,7 +11,13 @@ export default function Rsidemenu() {
   }
   return (
     <div>
-      <span className="icon-menu" onClick={addActive}>
+      <span
+        className="icon-menu"
+        onClick={addActive}
+        style={{
+          cursor: 'pointer',
+        }}
+      >
         <span className="bar"></span>
         <span className="bar"></span>
       </span>

@@ -90,6 +90,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    style={{ color: 'white' }}
                     value={formData.fullName}
                     onChange={handleChange}
                     name="fullName"
@@ -105,6 +106,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
+                    style={{ color: 'white' }}
                     value={formData.email}
                     onChange={handleChange}
                     name="email"
@@ -120,6 +122,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    style={{ color: 'white' }}
                     value={formData.phoneNumber}
                     onChange={handleChange}
                     name="phoneNumber"
@@ -135,6 +138,7 @@ export default function Contact() {
                   </label>
                   <input
                     value={formData.subject}
+                    style={{ color: 'white' }}
                     onChange={handleChange}
                     type="text"
                     name="subject"
@@ -160,6 +164,7 @@ export default function Contact() {
                   <label for="message">message</label>
                   <textarea
                     value={formData.message}
+                    style={{ color: 'white' }}
                     onChange={handleChange}
                     name="message"
                     id="message"

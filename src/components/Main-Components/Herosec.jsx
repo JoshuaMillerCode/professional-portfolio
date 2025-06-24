@@ -20,13 +20,15 @@ export default function Herosec() {
             </h4>
             <h1 className="scroll-animation" data-aos="fade-up">
               <span>Joshua Miller</span> <br /> Full Stack <br />
-              Software Engineer & <br />
-              Instructor
+              Software Engineer
             </h1>
           </div>
-          <p className="scroll-animation" data-aos="fade-up">
-            I code and teach fullstack websites. I love what I do. Simple as
-            that!
+          <p
+            className="scroll-animation"
+            data-aos="fade-up"
+            style={{ fontSize: '1.5rem', fontWeight: 'bold' }}
+          >
+            I code fullstack websites. I love what I do. Simple as that!
           </p>
           <a
             href="#portfolio"

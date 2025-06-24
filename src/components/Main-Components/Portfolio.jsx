@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 // import Lightbox from 'lightbox2';
 // import 'lightbox2/dist/css/lightbox.min.css';
 // import 'lightbox2/dist/js/lightbox.js';
@@ -32,6 +35,121 @@ export default function Portfolio() {
           </div>
 
           <div className="row portfolio-items">
+            <div className="col-md-12 scroll-animation" data-aos="fade-up">
+              <div className="portfolio-item portfolio-full">
+                <div
+                  className="portfolio-item-inner"
+                  style={{ height: '450px' }}
+                >
+                  <a
+                    href="https://www.a-mequipment.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OwlCarousel
+                      className="owl-theme"
+                      items={1}
+                      dots={false}
+                      loop
+                      margin={10}
+                      autoplay
+                      autoplayTimeout={5000}
+                      style={{ borderRadius: '20px', overflow: 'hidden' }}
+                    >
+                      <div>
+                        <img
+                          src="../assets/images/homepage.png"
+                          alt="A&M Equipment Screenshot 1"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/fieldService.png"
+                          alt="A&M Equipment Screenshot 2"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/lowPressure.png"
+                          alt="A&M Equipment Screenshot 3"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/automationControl.png"
+                          alt="A&M Equipment Screenshot 4"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/valveAdaption.png"
+                          alt="A&M Equipment Screenshot 5"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/about.png"
+                          alt="A&M Equipment Screenshot 6"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/contact.png"
+                          alt="A&M Equipment Screenshot 7"
+                        />
+                      </div>
+                    </OwlCarousel>
+                  </a>
+                  <ul
+                    className="portfolio-categories"
+                    style={{ marginBottom: '-20px' }}
+                  >
+                    <li>
+                      <a disabled>NextJS</a>
+                    </li>
+                    <li>
+                      <a disabled>Vercel</a>
+                    </li>
+                    <li>
+                      <a disabled>TypeScript</a>
+                    </li>
+                    <li>
+                      <a disabled>TailwindCSS</a>
+                    </li>
+                  </ul>
+                </div>
+                {/* <div
+                  className="portfolio-item-inner"
+                  style={{ height: '60px', marginTop: '50px' }}
+                >
+                  <ul className="portfolio-categories">
+                    <li>
+                      <a disabled>NextJS</a>
+                    </li>
+                    <li>
+                      <a disabled>Vercel</a>
+                    </li>
+                    <li>
+                      <a disabled>TypeScript</a>
+                    </li>
+                    <li>
+                      <a disabled>TailwindCSS</a>
+                    </li>
+                  </ul>
+                </div> */}
+
+                <h2>
+                  <a
+                    href="https://www.a-mequipment.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    A&M Equipment Website
+                  </a>
+                </h2>
+              </div>
+            </div>
+
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
