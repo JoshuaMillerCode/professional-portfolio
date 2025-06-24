@@ -78,7 +78,7 @@ export default function Rsidemenu() {
               </li>
             </ul>
 
-            <p>Other Links</p>
+            <p>My Other Sites</p>
             <ul className="menu scroll-nav-responsive d-flex">
               <li>
                 <a
