@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import OwlCarousel from 'react-owl-carousel';
@@ -9,8 +9,15 @@ import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 // import 'lightbox2/dist/js/lightbox.js';
 
 export default function Portfolio() {
+  const [showTexasCombatDescription, setShowTexasCombatDescription] =
+    useState(false);
+
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      offset: 200,
+      once: false,
+    });
     // Lightbox.option({
     //   resizeDuration: 200,
     //   fadeDuration: 600,
@@ -35,6 +42,255 @@ export default function Portfolio() {
           </div>
 
           <div className="row portfolio-items">
+            <div className="col-md-12 scroll-animation" data-aos="fade-up">
+              <div className="portfolio-item portfolio-full">
+                <div
+                  className="portfolio-item-inner"
+                  style={{ height: '450px' }}
+                >
+                  <a
+                    href="https://texascombatsportsllc.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OwlCarousel
+                      className="owl-theme"
+                      items={1}
+                      dots={false}
+                      loop
+                      margin={10}
+                      autoplay
+                      autoplayTimeout={5000}
+                      style={{ borderRadius: '20px', overflow: 'hidden' }}
+                    >
+                      <div>
+                        <img
+                          src="../assets/images/txcs/txcs-landing.jpeg"
+                          alt="Texas Combat Sports Screenshot 1"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/txcs/about.jpeg"
+                          alt="Texas Combat Sports Screenshot 2"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/txcs/event.jpeg"
+                          alt="Texas Combat Sports Screenshot 3"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/txcs/gallery.jpeg"
+                          alt="Texas Combat Sports Screenshot 4"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/txcs/fight.jpeg"
+                          alt="Texas Combat Sports Screenshot 5"
+                        />
+                      </div>
+                    </OwlCarousel>
+                  </a>
+                  <ul
+                    className="portfolio-categories"
+                    style={{ marginBottom: '-20px' }}
+                  >
+                    <li>
+                      <a disabled>NextJS</a>
+                    </li>
+                    <li>
+                      <a disabled>MongoDB</a>
+                    </li>
+                    <li>
+                      <a disabled>Stripe</a>
+                    </li>
+                    <li>
+                      <a disabled>TypeScript</a>
+                    </li>
+                  </ul>
+                </div>
+                <h2>
+                  <a
+                    href="https://texascombatsportsllc.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Texas Combat Sports
+                  </a>
+                </h2>
+                <button
+                  onClick={() => setShowTexasCombatDescription((prev) => !prev)}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#10c5fc',
+                    cursor: 'pointer',
+                    padding: 0,
+                    fontSize: '1rem',
+                    textDecoration: 'underline',
+                    marginTop: '0.5rem',
+                    marginBottom: '0.75rem',
+                  }}
+                  aria-expanded={showTexasCombatDescription}
+                  aria-controls="texas-combat-description"
+                >
+                  {showTexasCombatDescription ? (
+                    <span>Hide Description</span>
+                  ) : (
+                    <span>Show Description</span>
+                  )}
+                </button>
+                {showTexasCombatDescription && (
+                  <div
+                    id="texas-combat-description"
+                    style={{
+                      marginTop: '0.5rem',
+                      marginBottom: '0.5rem',
+                      padding: '1rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '8px',
+                      color: '#999',
+                      lineHeight: '1.6',
+                    }}
+                  >
+                    <p style={{ whiteSpace: 'pre-line', margin: 0 }}>
+                      I designed and built a production-ready platform for a
+                      live combat sports brand, combining event discovery,
+                      ticketing, streaming, and admin operations in one
+                      experience. The app uses a modern{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Next.js
+                      </span>{' '}
+                      (App Router) stack with{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        TypeScript
+                      </span>{' '}
+                      and{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Tailwind
+                      </span>
+                      , serverless APIs for secure business logic, and{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Stripe
+                      </span>{' '}
+                      for payments,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        webhooks
+                      </span>
+                      , and refunds. I implemented a complete ticketing flow
+                      with dynamic pricing/flash sales,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        PDF
+                      </span>{' '}
+                      ticket generation, and{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        QR
+                      </span>
+                      -based entry scanning, plus an admin dashboard to manage
+                      events, fights, fighters, video content, and inventory.
+                      The system integrates transactional email, image/video
+                      galleries, and performance-minded UI with optimistic
+                      updates and skeleton states. Security includes{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        auth
+                      </span>{' '}
+                      with role-based access and signed{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        webhooks
+                      </span>
+                      ; reliability comes from idempotent operations and
+                      defensive error handling. Deployed to cloud hosting with
+                      environment-based configuration and logging for
+                      observability.
+                      <br />
+                      <br />
+                      <strong>Core tech:</strong>{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Next.js
+                      </span>{' '}
+                      (App Router),{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        TypeScript
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Tailwind
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Serverless API Routes
+                      </span>
+                      <br />
+                      <strong>Payments:</strong>{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Stripe Checkout
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        webhooks
+                      </span>
+                      , transfers, idempotent transactions
+                      <br />
+                      <strong>Ticketing:</strong>{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        PDF
+                      </span>{' '}
+                      generation,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        QR
+                      </span>{' '}
+                      codes, on-site scanner, order reconciliation
+                      <br />
+                      <strong>Admin:</strong> Event/fight/fighter/video CRUD,
+                      flash sales, ticket tiers, inventory
+                      <br />
+                      <strong>Streaming:</strong> Live/past events UI with
+                      fallback states and loading strategies
+                      <br />
+                      <strong>Email:</strong> Transactional confirmations and
+                      ticket delivery
+                      <br />
+                      <strong>Performance/UX:</strong> Code-splitting,
+                      edge-friendly APIs, skeletons, optimistic UI
+                      <br />
+                      <strong>Security:</strong>{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Auth
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        RBAC
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        webhook
+                      </span>{' '}
+                      signature verification, input validation
+                      <br />
+                      <br />
+                      Happy to share implementation details ({' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        Stripe
+                      </span>{' '}
+                      flows, ticket{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        PDFs
+                      </span>
+                      ,{' '}
+                      <span style={{ color: '#10c5fc', fontWeight: 'bold' }}>
+                        QR
+                      </span>{' '}
+                      scanning) on request.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+
             <div className="col-md-12 scroll-animation" data-aos="fade-up">
               <div className="portfolio-item portfolio-full">
                 <div

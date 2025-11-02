@@ -8,6 +8,7 @@ export default function Resume() {
   }, []);
 
   // Dropdown state for each job
+  const [showTexasCombatDetails, setShowTexasCombatDetails] = useState(false);
   const [showSnorkelDetails, setShowSnorkelDetails] = useState(false);
   const [showFreelanceDetails, setShowFreelanceDetails] = useState(false);
   const [showLeadInstructorDetails, setShowLeadInstructorDetails] =
@@ -33,6 +34,64 @@ export default function Resume() {
 
           <div className="resume-timeline">
             <div className="item scroll-animation" data-aos="fade-right">
+              <span className="date">Aug 2025 - Present</span>
+              <h2>Full Stack Developer</h2>
+              <p>Texas Combat Sports · Houston, TX</p>
+              <button
+                onClick={() => setShowTexasCombatDetails((prev) => !prev)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#10c5fc',
+                  cursor: 'pointer',
+                  padding: 0,
+                  fontSize: '1rem',
+                  textDecoration: 'underline',
+                  marginBottom: '0.75rem',
+                }}
+                aria-expanded={showTexasCombatDetails}
+                aria-controls="texas-combat-details"
+              >
+                {showTexasCombatDetails ? (
+                  <span>Hide Details</span>
+                ) : (
+                  <span>Show Details</span>
+                )}
+              </button>
+              {showTexasCombatDetails && (
+                <ul
+                  id="texas-combat-details"
+                  style={{
+                    marginTop: '0.5rem',
+                    marginBottom: '0.5rem',
+                    paddingLeft: '1.2rem',
+                  }}
+                >
+                  <li>
+                    Solely designed, developed, and deployed the entire web
+                    platform from scratch using Next.js and MongoDB.
+                  </li>
+                  <li>
+                    Implemented a comprehensive online ticketing and payment
+                    system with Stripe, facilitating seamless transactions.
+                  </li>
+                  <li>
+                    Grew the platform to support over 30,000 monthly visitors,
+                    enhancing brand visibility and engagement.
+                  </li>
+                  <li>
+                    Managed all aspects of the development, from front-end
+                    design to back-end database architecture, ensuring a
+                    cohesive and robust solution.
+                  </li>
+                  <li>
+                    Continuously maintain and enhance the platform to meet
+                    evolving business needs and user feedback.
+                  </li>
+                </ul>
+              )}
+            </div>
+            <div className="item scroll-animation" data-aos="fade-left">
               <span className="date">Jun 2025 - Present</span>
               <h2>Expert AI Coding Contributor (Task-Based Contract)</h2>
               <p>Snorkel AI · Contract</p>
